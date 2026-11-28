@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bhn02kjlfms1j"]
+
+[ext_resource type="Script" uid="uid://dubh3ujqj4rcf" path="res://Dreugron Ranting/Scripts/CombatUnit.gd" id="1_5jdfh"]
+
+[node name="Knight" type="Node2D" unique_id=857036524]
+script = ExtResource("1_5jdfh")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2008139259]
+offset_right = 32.0
+offset_bottom = 48.0

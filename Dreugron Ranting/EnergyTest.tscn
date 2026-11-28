@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://codtbmbbnftp3"]
+
+[ext_resource type="Script" uid="uid://csjiml50coshk" path="res://Dreugron Ranting/Scripts/DefenseLine.gd" id="1_t3hl4"]
+[ext_resource type="Script" uid="uid://suimknmwbgfc" path="res://Dreugron Ranting/Scripts/DeploymentManager.gd" id="1_y176u"]
+[ext_resource type="Script" uid="uid://bwanr7wq43384" path="res://Dreugron Ranting/Scripts/energy_bar.gd" id="2_y176u"]
+[ext_resource type="Script" uid="uid://cisb8yvmdu6rb" path="res://Dreugron Ranting/Scripts/DeployButton.gd" id="3_n5cns"]
+[ext_resource type="Resource" uid="uid://dsjmswv6xgt6x" path="res://Dreugron Ranting/Units/KnightData.tres" id="4_y176u"]
+
+[node name="Node2D" type="Node2D" unique_id=131560997]
+
+[node name="Background" type="ColorRect" parent="." unique_id=633506387]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.4769053, 0.44161305, 0.4387083, 1)
+metadata/_edit_lock_ = true
+
+[node name="SpawnPoint" type="Marker2D" parent="." unique_id=957330026]
+position = Vector2(128, 408)
+
+[node name="UnitContainer" type="Node2D" parent="." unique_id=269813047]
+y_sort_enabled = true
+position = Vector2(128, 408)
+
+[node name="DefenseLine" type="Node2D" parent="." unique_id=440993629]
+position = Vector2(128, 408)
+script = ExtResource("1_t3hl4")
+front_x = 500.0
+units_per_rank = 5
+max_ranks = 7
+
+[node name="DeploymentManager" type="Node2D" parent="." unique_id=680178493 node_paths=PackedStringArray("spawn_point", "unit_container", "defense_line")]
+script = ExtResource("1_y176u")
+spawn_point = NodePath("../SpawnPoint")
+unit_container = NodePath("../UnitContainer")
+defense_line = NodePath("../DefenseLine")
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=643801896]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI" unique_id=1352371048]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = 528.0
+offset_right = -640.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="EnergyBar" type="ProgressBar" parent="UI/HBoxContainer" unique_id=231374268]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+script = ExtResource("2_y176u")
+
+[node name="Button" type="Button" parent="UI/HBoxContainer" unique_id=1391109483 node_paths=PackedStringArray("deployment_manager")]
+custom_minimum_size = Vector2(70, 100)
+layout_mode = 2
+script = ExtResource("3_n5cns")
+unit_data = ExtResource("4_y176u")
+deployment_manager = NodePath("../../../DeploymentManager")

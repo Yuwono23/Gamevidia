@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="UnitData" format=3 uid="uid://dsjmswv6xgt6x"]
+
+[ext_resource type="Script" uid="uid://dqkh2ymhdawp2" path="res://Dreugron Ranting/Scripts/UnitData.gd" id="1_dv8ig"]
+[ext_resource type="PackedScene" uid="uid://bhn02kjlfms1j" path="res://Dreugron Ranting/Units/Knight.tscn" id="2_4xcos"]
+
+[resource]
+script = ExtResource("1_dv8ig")
+unit_scene = ExtResource("2_4xcos")
+cost = 0.0
+cooldown = 0.0
+metadata/_custom_type_script = "uid://dqkh2ymhdawp2"

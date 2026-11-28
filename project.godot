@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="Gamevidia"
+run/main_scene="uid://codtbmbbnftp3"
 config/features=PackedStringArray("4.8", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+EnergyManager="*uid://cniia1v0goefj"
 
 [display]
 

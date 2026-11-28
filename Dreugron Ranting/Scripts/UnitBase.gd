@@ -23,7 +23,7 @@ func setup(line: DefenseLine, slot: int, target: Vector2, unit_data: UnitData) -
 func _process(delta: float) -> void:
 	if is_holding:
 		return
-	print("walking: pos=", global_position, " target=", hold_position, " delta=", delta)
+	#print("walking: pos=", global_position, " target=", hold_position, " delta=", delta)
 	var to_target := hold_position - global_position
 	if to_target.length() <= arrival_epsilon:
 		global_position = hold_position

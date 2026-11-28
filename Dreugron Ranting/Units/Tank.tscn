@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://biul8jg07dl2k"]
+
+[ext_resource type="Script" uid="uid://dubh3ujqj4rcf" path="res://Dreugron Ranting/Scripts/CombatUnit.gd" id="1_0in5t"]
+[ext_resource type="Texture2D" uid="uid://08io8jfo4h8w" path="res://Dreugron Ranting/Asset/Tank.png" id="2_0in5t"]
+
+[node name="Knight" type="Node2D" unique_id=857036524]
+script = ExtResource("1_0in5t")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1208581482]
+position = Vector2(8, -40)
+scale = Vector2(0.367, 0.336)
+texture = ExtResource("2_0in5t")

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="UnitData" format=3 uid="uid://c7h6bbe1hhvnx"]
+
+[ext_resource type="Script" uid="uid://dqkh2ymhdawp2" path="res://Dreugron Ranting/Scripts/UnitData.gd" id="1_6cqpy"]
+[ext_resource type="PackedScene" uid="uid://bhc51idmnqo1o" path="res://Dreugron Ranting/Units/Archer.tscn" id="2_apfld"]
+
+[resource]
+script = ExtResource("1_6cqpy")
+display_name = "Archer"
+unit_scene = ExtResource("2_apfld")
+metadata/_custom_type_script = "uid://dqkh2ymhdawp2"

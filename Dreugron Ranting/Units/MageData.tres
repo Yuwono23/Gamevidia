@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="UnitData" format=3 uid="uid://d0yfqx2y31jdc"]
+
+[ext_resource type="Script" uid="uid://dqkh2ymhdawp2" path="res://Dreugron Ranting/Scripts/UnitData.gd" id="1_o7ucq"]
+[ext_resource type="PackedScene" uid="uid://5pcxsi2d21om" path="res://Dreugron Ranting/Units/Mage.tscn" id="2_7c6k7"]
+
+[resource]
+script = ExtResource("1_o7ucq")
+display_name = "Mage"
+unit_scene = ExtResource("2_7c6k7")
+metadata/_custom_type_script = "uid://dqkh2ymhdawp2"

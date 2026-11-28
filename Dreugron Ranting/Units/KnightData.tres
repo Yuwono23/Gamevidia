@@ -5,6 +5,7 @@
 
 [resource]
 script = ExtResource("1_dv8ig")
+display_name = "Knight"
 unit_scene = ExtResource("2_4xcos")
 cost = 0.0
 cooldown = 0.0
